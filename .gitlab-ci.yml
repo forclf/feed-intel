@@ -1,0 +1,28 @@
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+include:
+  - remote: https://gitlab.com/prpl-foundation/prplwrt/prplwrt/-/raw/prplwrt/.gitlab/sdk.yml
+
+generate:
+  extends: .generate SDK package build jobs
+  variables:
+    CI_SDK_INSTALL_FEEDS: base packages routing feed_target_mips
+    CI_SDK_BUILD_PACKAGES: |
+      switch_cli_ugw8
+      ppa-drv
+      eip97
+      ltq_fw_PHY_IP
+      safec3
+      swpal_6x-uci
+      iwlwav-iw
+      lq-wave-300_6x-uci
+      iwlwav-driver-uci
+      iwlwav-tools
+      iwlwav-hostap-uci
+      dwpal_6x-uci
+      iwlwav-base-files
+      directconnect_dp
+
+build:
+  extends: .execute SDK package build jobs
