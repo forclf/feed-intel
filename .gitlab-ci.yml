@@ -7,7 +7,7 @@ include:
 generate:
   extends: .generate SDK package build jobs
   variables:
-    CI_SDK_INSTALL_FEEDS: base packages routing feed_target_mips
+    CI_SDK_INSTALL_FEEDS: base packages routing feed_intel
     CI_SDK_BUILD_PACKAGES: |
       switch_cli_ugw8
       ppa-drv
