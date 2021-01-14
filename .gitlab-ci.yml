@@ -7,6 +7,9 @@ include:
 generate:
   extends: .generate SDK package build jobs
   variables:
+    CI_SDK_TARGETS: |
+      intel_mips-xrx500
+      ath79-generic
     CI_SDK_INSTALL_FEEDS: base packages routing feed_intel
     CI_SDK_BUILD_PACKAGES: |
       bridge-utils-ugw
