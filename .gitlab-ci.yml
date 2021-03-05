@@ -9,7 +9,6 @@ generate:
   variables:
     CI_SDK_TARGETS: |
       intel_mips-xrx500
-      ath79-generic-19.07.7
     CI_SDK_INSTALL_FEEDS: base packages routing feed_intel
     CI_SDK_BUILD_PACKAGES: |
       bridge-utils-ugw
