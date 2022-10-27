@@ -1,6 +1,3 @@
-[submodule "intel_mips"]
-	path = intel_mips
-	url = https://gitlab.com/prpl-foundation/intel/feed_target_mips.git
 [submodule "datapath"]
 	path = datapath
 	url = https://gitlab.com/prpl-foundation/intel/feed_datapath.git
@@ -22,3 +19,7 @@
 [submodule "pending"]
 	path = pending
 	url = https://gitlab.com/prpl-foundation/intel/feed-pending.git
+[submodule "intel_mips"]
+	path = intel_mips
+	url = https://github.com/forclf/feed_target_mips.git
+	branch = k3c
